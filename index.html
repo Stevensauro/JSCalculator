@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <section id="screen">
+            <p id="equation"></p>
+            <p id="result"></p>
+        </section>
+        <section id="body">
+            <div id="numbers">
+            </div>
+            <div id="signs">
+            </div>
+        </section>
+    </div>
+</body>
+
+<style>
+    body,button{font-family: Arial, Helvetica, sans-serif;}
+    p{margin: 0; white-space: nowrap;}
+
+    .calculator{
+        margin: 70px auto;
+        width: 700px;
+        height: 700px;
+        background-color: darkgray;
+        border-radius: 5px;
+        border: 5px solid black;
+    }
+
+    #screen{
+        background-color: azure;
+        padding-top: 10px;
+        padding-right: 15px;
+        margin: 20px auto;
+        height: 100px;
+        width: 95%;
+        border-radius: 5px;
+        text-align: right;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    
+    #equation{
+        font-size: 25px;
+        color: rgb(63, 63, 63);
+    }
+
+    #result{
+        font-size: 55px;
+    }
+
+    #body{
+        display: flex;
+        margin: 0 auto 0;
+        background-color: gray;
+        height: 76%;
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    #numbers{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1px 1px;
+        padding: 10px;
+        padding-top: 25px;
+        justify-content: space-evenly;
+    }
+
+    #signs{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1px 1px;
+        padding: 10px;
+        padding-top: 25px;
+        justify-content: space-evenly;
+    }
+
+    button:hover{
+        background-color: rgb(255, 255, 255);
+        border: 3px solid black;
+        cursor: pointer;
+    }
+
+
+    #numbers button{
+        width: 30%;
+        height: 20%;
+        font-size: 30px;
+    }
+
+    #signs button{
+        width: 40%;
+        height: 20%;
+        font-size: 30px;
+    }
+
+    #signs{
+        flex: 1;
+    }
+
+</style>
+
+</html>
